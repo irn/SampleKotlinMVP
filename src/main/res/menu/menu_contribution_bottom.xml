@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_palaver"
+        android:icon="@drawable/ic_palaver"
+        android:iconTint="@android:color/black"
+        android:title="@string/title_palaver" />
+
+    <item
+        android:id="@+id/navigation_ledger"
+        android:icon="@drawable/ic_ledger"
+        android:iconTint="@android:color/black"
+        android:title="@string/title_ledger" />
+
+    <item
+        android:id="@id/navigation_quorum"
+        android:icon="@drawable/ic_quorum"
+        android:iconTint="@android:color/black"
+        android:title="@string/title_quorum" />
+
+</menu>

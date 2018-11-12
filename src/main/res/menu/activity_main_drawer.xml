@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_holdings"
+            android:icon="@drawable/ic_business_center_black_24dp"
+            android:title="@string/title_contracts" />
+        <item
+            android:id="@+id/nav_contracts"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="@string/title_accounts" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="@string/title_contacts" />
+
+        <item
+            android:id="@+id/nav_withdraw"
+            android:icon="@drawable/ic_menu_withdraw"
+            android:title="@string/title_withdraw"/>
+
+        <item
+            android:id="@+id/nav_make_payment"
+            android:icon="@drawable/ic_menu_pay"
+            android:title="@string/title_payment"/>
+
+        <item
+            android:id="@+id/nav_add_funds"
+            android:icon="@drawable/ic_menu_add_funds"
+            android:title="@string/title_add_funds"/>
+
+        <item
+            android:id="@+id/nav_guarantees"
+            android:title="Guarantees" />
+        <item
+            android:id="@+id/nav_assurances"
+            android:title="Assurances" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/title_settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="@string/title_help" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_guarantees"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Guarantees" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_assurances"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Assurances" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

@@ -1,0 +1,104 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="TalismanTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="buttonStyle">@style/TalismanButtonStyle</item>
+        <item name="android:borderlessButtonStyle">@style/TalismanBorderlessButtonStyle</item>
+        <item name="borderlessButtonStyle">@style/TalismanBorderlessButtonStyle</item>
+        <item name="alertDialogTheme">@style/TalismanAlertDialog</item>
+    </style>
+
+    <style name="Button" parent="Base.Widget.AppCompat.Button.Colored"/>
+    <style name="Button.White">
+        <item name="android:backgroundTint">#ffEEF5F9</item>
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TalismanAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="FAB_menu_style">
+        <item name="android:minHeight">?listPreferredItemHeightSmall</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/fab_menu_background_shape</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">9dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:alpha">0</item>
+    </style>
+
+    <style name="TalismanActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/MyActionBarTitleStyle</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleStyle</item>
+    </style>
+
+    <style name="TalismanButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TalismanBorderlessButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TalismanToolbarStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyActionBarTitleStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="ChatDetails" parent="AppBaseTheme">
+        <item name="android:textColor">#AADDDD22</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ChatAlice" parent="AppBaseTheme">
+        <item name="android:textColor">#FFFFFF00</item>
+        <!-- <item name="android:background">#FFFFFF00</item> -->
+        <item name="android:textSize">18sp</item>
+        <!-- <item name="android:textStyle">bold</item> -->
+    </style>
+
+    <style name="ChatMine" parent="AppBaseTheme">
+        <item name="android:textColor">#FFA0A0A0</item>
+    </style>
+
+    <style name="ChatError" parent="AppBaseTheme">
+        <item name="android:textColor">#80FF00FF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ChatNew" parent="AppBaseTheme">
+        <item name="android:textColor">#80FF00FF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TalismanTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="TalismanTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

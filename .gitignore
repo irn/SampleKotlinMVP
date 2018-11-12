@@ -1,0 +1,41 @@
+#(ABS) Android generated
+bin
+gen
+build
+captures
+
+#(ABS) Eclipse
+.project
+.classpath
+.settings
+.checkstyle
+
+#(ABS) IntelliJ IDEA
+.idea
+.gradle
+*.iml
+*.ipr
+*.iws
+classes
+gen-external-apklibs
+
+#(ABS) Maven
+target
+release.properties
+pom.xml.*
+
+#(ABS) Ant
+build.xml
+ant.properties
+local.properties
+proguard.cfg
+proguard-project.txt
+
+#(ABS) Other
+.DS_Store
+tmp
+
+#locally discovered
+out
+project.properties
+.metadata

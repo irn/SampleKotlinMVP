@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip" >
+
+    <!--
+    <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/button_back"
+            android:onClick="onBackButtonClicked" />
+    -->
+
+
+    <TextView
+        android:id="@+id/titleIntroCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_introcode"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/eTextIntroCode"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="textNoSuggestions"
+        android:autoText="false"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/titleIntroCode" />
+
+    <TextView
+        android:id="@+id/titleMemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_memo"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true" />
+    <TextView
+            android:id="@+id/textMemo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dip"
+            android:layout_below="@+id/titleMemo"
+            android:maxLines="3" />
+
+    <!-- android:src="@drawable/user128" -->
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_marginBottom="5dip"
+        android:contentDescription="@string/title_photo"
+        android:layout_below="@+id/buttonLookup"
+        android:layout_alignParentRight="true" />
+
+
+
+    <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_full_name"
+            android:visibility="invisible"
+            android:layout_below="@+id/textMemo"
+            android:layout_marginBottom="10dip"
+            android:layout_alignLeft="@+id/textMemo" />
+    <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dip"
+            android:text=""
+            android:layout_below="@+id/titleName"/>
+
+    <TextView
+            android:id="@+id/titleNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textName"
+            android:visibility="invisible"
+            android:layout_marginBottom="5dip"
+            android:text="@string/title_nickname2"/>
+
+    <TextView
+        android:id="@+id/textNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleNick"
+        android:layout_marginBottom="10dip"
+        android:layout_alignLeft="@+id/titleNick" />
+
+
+
+    <Button
+        android:id="@+id/buttonLookup"
+        android:layout_width="130dip"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:onClick="onLookupButtonClicked"
+        android:text="@string/button_lookup"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/buttonAccept"
+        android:layout_width="130dip"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:onClick="onAcceptButtonClicked"
+        android:text="@string/button_accept"
+        android:layout_below="@+id/photo"
+        android:layout_alignRight="@+id/textMemo" />
+
+    <TextView
+        android:id="@+id/textStatus"
+	android:textStyle="bold|italic"
+	android:textColor="#ffff00"
+	android:typeface="monospace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignBaseline="@+id/buttonClear"
+        android:layout_alignBottom="@+id/buttonClear"
+        android:layout_toRightOf="@+id/buttonClear" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:onClick="onClearButtonClicked"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_clear" />
+
+    <!-- android:visibility="invisible" -->
+
+</RelativeLayout>

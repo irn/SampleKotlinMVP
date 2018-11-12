@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_name" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/eTextName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textName"
+        android:layout_marginBottom="10dip"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/tViewPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTextName"        
+        android:text="@string/title_phonenumber" >
+    </TextView>    
+
+   <EditText
+       android:id="@+id/eTextPhoneNumber"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/tViewPhoneNumber"
+       android:ems="10"
+       android:imeOptions="actionDone"
+       android:inputType="phone" >
+
+    </EditText>
+    
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"        
+        android:layout_alignParentBottom="true"
+        android:onClick="onSendButtonClicked"
+        android:text="@string/title_send" />
+    
+</RelativeLayout>

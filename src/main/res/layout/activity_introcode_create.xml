@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip" >
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:text="@string/button_clear_memo"
+        android:onClick="onClearButtonClicked" />
+
+    <TextView
+        android:id="@+id/titleMemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="@string/title_memo"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/eTextMemo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:lines="2"
+        android:maxLines="2"
+        android:layout_below="@+id/titleMemo"
+        android:layout_alignLeft="@+id/titleMemo" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCreateButtonClicked"
+        android:text="@string/button_create_code"
+        android:layout_alignTop="@+id/tViewIntroCode"
+        android:layout_toLeftOf="@+id/tViewIntroCode"/>
+
+    <TextView
+        android:id="@+id/tViewIntroCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="80sp"
+        android:layout_below="@+id/eTextMemo"
+        android:layout_alignRight="@+id/eTextMemo"/>
+
+    <TextView
+        android:id="@+id/tViewPhonetics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_below="@+id/tViewIntroCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tViewContract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_contract"
+        android:layout_alignBottom="@+id/tViewIntroCode"
+        android:layout_alignParentLeft="true">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinnerContracts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tViewContract" >
+    </Spinner>
+
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:textStyle="bold|italic"
+        android:textColor="#ffff00"
+        android:typeface="monospace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCancel"
+        android:layout_marginBottom="15dip" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dip"
+        android:onClick="onCancelButtonClicked"
+        android:text="@string/button_cancel" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text=""
+        android:layout_alignBottom="@+id/buttonCancel"
+        android:layout_alignLeft="@+id/buttonBack"/>
+
+
+</RelativeLayout>

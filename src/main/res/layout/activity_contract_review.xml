@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:padding="5dip"  >
+
+    <!-- Button
+        android:id="@+id/btnNext"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:onClick="onNextButtonClicked"
+        android:text="@string/title_contract_agree"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" >
+
+    </Button -->
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:textStyle="bold|italic"
+                android:textColor="#ffff00"
+                android:typeface="monospace"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip" />
+
+            <TextView
+                android:id="@+id/tViewContract"
+                android:layout_below="@+id/textStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnOne"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:onClick="onOneButtonClicked"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="50dp"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:id="@+id/btnTwo"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:onClick="onTwoButtonClicked"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btnOne"
+                android:layout_marginTop="50dp"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:id="@+id/btnThree"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:onClick="onThreeButtonClicked"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btnTwo"
+                android:layout_marginTop="60dp"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

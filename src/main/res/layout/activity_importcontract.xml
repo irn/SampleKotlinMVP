@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/tViewFromUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_fromurl" />
+
+    <EditText
+        android:id="@+id/eTextUrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tViewFromUrl"
+        android:text="@string/url_defaultcontract"
+        android:ems="10"
+        android:inputType="textUri" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:onClick="onDownloadButtonClicked"
+        android:text="@string/title_importcontract"
+        android:layout_below="@+id/eTextUrl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"/>
+
+    <TextView
+        android:id="@+id/textStatus"
+	android:textStyle="bold|italic"
+	android:textColor="#ffff00"
+	android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:layout_below="@+id/eTextUrl"
+        android:layout_alignParentRight="true">
+    </TextView>
+
+</RelativeLayout>

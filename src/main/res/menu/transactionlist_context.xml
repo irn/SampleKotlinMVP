@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/main_menu_group" >
+        <item
+            android:id="@+id/menu_item_makepayment"
+            android:title="@string/title_payment"/>
+        <item
+            android:id="@+id/menu_item_chat"
+            android:title="@string/title_chat"/>
+        <item
+            android:id="@+id/menu_item_rename_other_account"
+            android:title="@string/title_rename_others_holding"/>
+        <item
+            android:id="@+id/menu_item_review_payment"
+            android:title="@string/title_review_payment"/>
+    </group>
+
+</menu>

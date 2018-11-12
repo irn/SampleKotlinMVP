@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/main_menu_group" >
+        <item
+            android:id="@+id/menu_pay_from_holding"
+            android:icon="@drawable/ic_menu_pay"
+            android:title="@string/title_pay_from_holding"/>
+
+        <item
+            android:id="@+id/menu_withdraw"
+            android:icon="@drawable/ic_menu_withdraw"
+            android:title="@string/title_withdraw"/>
+
+        <item
+            android:id="@+id/menu_add_funds"
+            android:icon="@drawable/ic_menu_add_funds"
+            android:title="@string/title_add_funds"/>
+
+        <item
+            android:id="@+id/menu_holding_refresh"
+            android:icon="@drawable/ic_menu_refresh"
+            android:title="@string/title_refresh_holding">
+        </item>
+        <item
+            android:id="@+id/menu_item_rename"
+            android:icon="@drawable/ic_menu_rename"
+            android:title="@string/title_rename_holding">
+        </item>
+        <item
+            android:id="@+id/menu_accept_invite"
+            android:icon="@drawable/ic_menu_accept_intro"
+            android:title="@string/title_acceptintro"/>
+        <item
+            android:id="@+id/menu_create_invite"
+            android:icon="@drawable/ic_menu_invite_intro"
+            android:title="@string/title_createintro"/>
+        <item
+            android:id="@+id/menu_show_others"
+            android:title="@string/title_show_others">
+        </item>
+        <item
+            android:id="@+id/menu_hide"
+            android:icon="@drawable/ic_menu_hide"
+            android:title="@string/title_hide">
+        </item>
+    </group>
+
+</menu>

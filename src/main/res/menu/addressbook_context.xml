@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/main_menu_group" >
+        <item
+            android:id="@+id/menu_item_chat"
+            android:title="@string/title_chat" />
+        <item
+            android:id="@+id/menu_item_renamepersona"
+            android:title="@string/title_rename" />
+        <item
+            android:id="@+id/menu_item_persona_details"
+            android:title="@string/menu_persona_details" />
+    </group>
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/tViewPresident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/title_president" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/eTextPresident"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tViewPresident"
+        android:imeOptions="actionNext"
+        android:maxLength="100"
+        android:nextFocusDown="@+id/eTextTreasurer"
+        android:textSize="18sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tViewTreasurer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eTextPresident"
+        android:text="@string/title_treasurer" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/eTextTreasurer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tViewTreasurer"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/eTextChamaName"
+        android:textSize="18sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tViewChamaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eTextTreasurer"
+        android:text="@string/title_chamaname" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/eTextChamaName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tViewChamaName"
+        android:maxLength="255"
+        android:imeOptions="actionNext"        
+        android:nextFocusDown="@+id/eTextAgreement"
+        android:textSize="18sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tViewRegistrationNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eTextChamaName"
+        android:text="@string/title_chamaname" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/eTextRegistrationNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tViewRegistrationNumber"
+        android:imeOptions="actionGo"
+        android:maxLength="255"
+        android:textSize="18sp" >
+    </EditText>
+        
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_create" />
+
+</RelativeLayout>

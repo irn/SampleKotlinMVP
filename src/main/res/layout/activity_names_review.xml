@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dip" >
+
+    <TextView
+        android:id="@+id/tIssuerFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/title_issuer" />
+
+    <TextView
+        android:id="@+id/statusIssuerFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:layout_above="@+id/tTextIssuerFullName">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tTextIssuerFullName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/tIssuerFullName"
+        android:textSize="36sp">
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/tIssuerShortName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_short"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tTextIssuerFullName" />
+
+    <TextView
+        android:id="@+id/statusIssuerShortName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:layout_above="@+id/tTextIssuerShortName">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tTextIssuerShortName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/tIssuerShortName"
+        android:textSize="36sp">
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/tIssuerPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_phonenumber"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tTextIssuerShortName" />
+
+    <TextView
+        android:id="@+id/statusIssuerPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:layout_above="@+id/tTextIssuerPhoneNumber">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tTextIssuerPhoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/tIssuerPhoneNumber"
+        android:textSize="36sp">
+    </TextView>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:onClick="onChangeButtonClicked"
+        android:text="@string/button_change"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:onClick="onNextButtonClicked"
+        android:text="@string/button_next"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/textStatus"
+	android:textStyle="bold|italic"
+	android:textColor="#ffff00"
+	android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="">
+    </TextView>
+
+</RelativeLayout>

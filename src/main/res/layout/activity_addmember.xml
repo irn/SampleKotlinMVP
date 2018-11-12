@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/title_name" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/eTextName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textName"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:maxLength="100"
+        android:nextFocusDown="@+id/eTextPhoneNumber"
+        android:textSize="18sp" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tViewPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eTextName"
+        android:text="@string/title_phonenumber" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/eTextPhoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tViewPhoneNumber"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:nextFocusDown="@+id/eTextAmount"
+        android:textSize="18sp" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tViewAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eTextPhoneNumber"
+        android:text="@string/title_amount" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/eTextAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tViewAmount"
+        android:imeOptions="actionGo"
+        android:inputType="numberDecimal"
+        android:maxLength="255"
+        android:textSize="18sp" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_create" />
+
+</RelativeLayout>

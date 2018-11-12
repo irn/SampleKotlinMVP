@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="invitationItem"
+            type="sc.dinero.webfunds.talisman.model.GroupMember"/>
+    </data>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMember">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="?android:listPreferredItemPaddingStart"
+            android:paddingEnd="?android:listPreferredItemPaddingEnd"
+            android:paddingStart="?android:listPreferredItemPaddingStart"
+            android:paddingTop="?android:listPreferredItemPaddingStart">
+
+
+            <TextView
+                android:id="@+id/textViewGroupName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Select Group" />
+
+            <TextView
+                android:id="@+id/textViewMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewGroupName"
+                android:layout_marginTop="8dp"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:text="Join" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

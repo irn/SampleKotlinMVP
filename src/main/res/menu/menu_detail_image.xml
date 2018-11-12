@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_image_new" android:title="@string/button_photo_take" android:icon="@drawable/ic_add_photo_gray"/>
+
+    <item android:id="@+id/action_image_select" android:title="@string/button_photo_select" android:icon="@drawable/ic_select_photo_gray"/>
+</menu>

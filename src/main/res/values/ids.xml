@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_holding_refresh" type="id"/>
+
+    // This ID needed for main id of ListView which uses in AbstractBaseFragment
+    <item name="talisman_list" type="id"/>
+    <item name="avatar_view" type="id"/>
+    <item name="display_name" type="id"/>
+
+    <item name="navigation_transaction" type="id"/>
+    <item name="navigation_quorum" type="id"/>
+</resources>

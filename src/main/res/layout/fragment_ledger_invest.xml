@@ -1,0 +1,208 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="sc.dinero.webfunds.talisman.viewmodel.ContributionViewModel"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".fragments.LedgerFragment">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewContributions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:padding="?android:listPreferredItemPaddingStart">
+
+                <TextView
+                    android:id="@+id/textViewContributions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:drawablePadding="10dp"
+
+                    android:drawableTop="@drawable/ic_shopping_cart_bg"
+                    android:text="Contributed" />
+
+                <TextView
+                    android:id="@+id/textViewContributionsValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textViewContributions"
+                    android:layout_alignEnd="@+id/textViewContributions"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textStyle="bold"
+                    tools:text="0" />
+
+
+                <TextView
+                    android:id="@+id/textViewContributed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/ic_chart_bg"
+                    android:text="Contributed" />
+
+                <TextView
+                    android:id="@+id/textViewPending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/ic_tasks_bg"
+                    android:gravity="center"
+                    android:text="My turn\n(for the hand)" />
+
+                <TextView
+                    android:id="@+id/textViewContributedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textViewContributed"
+                    android:layout_alignEnd="@+id/textViewContributed"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/textViewPendingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textViewPending"
+                    android:layout_alignEnd="@+id/textViewPending"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="0" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:padding="?android:listPreferredItemPaddingStart">
+
+                <TextView
+                    android:id="@+id/textViewActiveMembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/ic_member_active_bg"
+                    android:gravity="center"
+                    android:text="Active\nMembers" />
+
+                <TextView
+                    android:id="@+id/textViewActiveMembersValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textViewActiveMembers"
+                    android:layout_alignEnd="@+id/textViewActiveMembers"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textViewMembersServed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/ic_member_served_bg"
+                    android:gravity="center"
+                    android:text="Members\nServed" />
+
+                <TextView
+                    android:id="@+id/textViewPortfolio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/ic_wallet_bg"
+                    android:gravity="center"
+                    android:text="Portfolio Value" />
+
+                <TextView
+                    android:id="@+id/textViewMembersServedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textViewMembersServed"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textViewMembersServed"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPortfolioValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textViewPortfolio"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textViewPortfolio"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardViewMembers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewContributions"
+            app:layout_constraintVertical_bias="1.0" />
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

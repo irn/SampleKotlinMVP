@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF">
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:src="@drawable/user128"
+        android:visibility="invisible"
+        android:contentDescription="@string/title_photo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/reltime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dip"
+        android:gravity="end"
+        android:text="BLAH"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/photo">
+    </TextView>
+    
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF">
+    </TextView>
+    
+    <TextView
+        android:id="@+id/To"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF">
+    </TextView>
+    
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/To"   
+        android:textSize="20sp"
+        android:textColor="#FFFFFF">
+    </TextView>
+
+    <TextView
+        android:id="@+id/memo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/To"
+        android:textSize="15sp"
+        android:paddingBottom="0dip"
+        android:gravity="end"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+    </TextView>
+
+</RelativeLayout>

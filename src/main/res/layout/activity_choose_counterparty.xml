@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.ChooseCounterpartyActivity" >
+
+    <TextView
+        android:id="@+id/titleHoldingName"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="5dip"
+        android:text="@string/title_from" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tViewHoldingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignTop="@+id/titleHoldingName"
+        android:layout_toRightOf="@+id/titleHoldingName"
+        android:layout_toLeftOf="@+id/tViewBalance">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tViewBalance"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_above="@+id/chooseCounterparty"
+        android:layout_alignRight="@+id/photo"
+        >
+    </TextView>
+    
+    <!-- TextView
+        android:id="@+id/tChoosePlease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tViewHoldingName"
+        android:text="@string/title_choose_counterparty" / -->
+    <!--
+        android:textColorLink="#00FFFF"
+        android:color="#FFFF00"
+        android:textColorHint="#FF00FF"
+        -->
+    
+    <Button
+        android:id="@+id/chooseCounterparty"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_choose_your_payee"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tViewHoldingName"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/photo"/>
+
+    <ImageView
+            android:id="@+id/photo"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:src="@drawable/user128"
+        android:contentDescription="@string/title_photo"
+        android:layout_alignTop="@+id/chooseCounterparty"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tViewPayeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text=""
+        android:layout_alignBottom="@+id/photo"
+        android:layout_alignParentLeft="true">
+    </TextView>
+
+
+    <Button
+        android:id="@+id/chooseAccount"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:layout_alignRight="@+id/chooseCounterparty"/>
+
+    <TextView
+        android:id="@+id/tViewPayeeAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_below="@+id/chooseAccount"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="onNextButtonClicked"
+            android:layout_alignParentRight="true"
+            android:text="@string/button_next" />
+
+</RelativeLayout>
